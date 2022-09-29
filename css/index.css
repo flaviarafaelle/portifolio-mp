@@ -1,0 +1,178 @@
+* {
+    /*define a area de margem nos 4 lados do elemento*/
+    margin: 0;
+    /*define entre o conteúdo de um elemento e suas bordas*/
+    padding: 0;
+    /*/para configurar um ou mais propiedades de contorno*/
+    outline: 0;
+}
+
+body {
+    /* definição da nossa fonte do body*/
+    font-family: 'Roboto','sans-serfi';
+    margin: 0;
+}
+
+li {
+    /*retirando bolinhas*/
+    list-style: none;
+}
+
+ /* HEADER */
+
+ .header-menu{
+    /* //Torna o nosso elemento flexcontainer automaticamente transformando todos os seus filhos diretos
+    em flex itens*/
+  display:flex;
+  position:fixed; /*Deixa o nosso header fixo*/
+  width:100%; /*largura*/
+  padding: 8px; /*espaçamento dos quatros lados*/
+  padding-bottom: 32px; /*espaçamento inferior*/
+  padding-top: 32px;/*espaçamento superior*/
+  height: 60px;
+  background-color: #D8AC9C;
+}
+
+.header-menu nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+.lista-menu {
+    display: flex;
+    justify-content: space-evenly; /* espaçamento entre eles igual*/
+    width: 50%;
+    align-items: center;
+}
+
+/*Pegando os itens com tags de dentro da nossa lista*/
+.lista-menu li a {
+    color:#fff;
+    font-size: 18px;
+    text-decoration: inherit;
+}
+
+li a:hover { /*mudar cor ao passar mouse*/
+    color:#9b7263;
+    transition: color 0.3s;
+}
+
+.principal {
+    height: 100vh;
+    display: flex;
+    background-color: #F4EEED;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.subcontainer-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.topico-principal {
+    font-size: 36px;
+    color: #999B84;
+}
+
+.lista-item {
+    padding: 32px; /*espaçamento dos 4 lados*/
+}
+
+.lista-item ul li {
+    margin-bottom: 32px; /*espaçamento entre os items da nossa lista*/
+}
+
+.lista-titulo {
+    margin-bottom: 5px; /*espaçamento entre os items da nossa lista*/
+    font-size: 22px;
+    color: #898b66;
+    font-weight: 700;
+}
+
+.lista-local {
+    font-size: 18px;
+    color: #444444;
+}
+
+.lista-descricao {
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 20px; /*Espaçamento entre as linhas*/
+    color: #444444;
+    font-weight: 300;
+}
+
+.wrapper-portfolio {
+    /*como se fosse o pacote do nosso portfolio*/
+    background-color: #F4EEED;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-lista {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.subtitulo-lista {
+    font-size: 18px;
+    color: #444444;
+    font-weight: 500;
+}
+
+.footer {
+    background-color: #D8AC9C;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+footer li a:hover { /*mudar cor ao passar mouse*/
+    color:#9b7263;
+    transition: color 0.3s;
+}
+
+.lista-footer li {
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.lista-footer li a {
+    color: inherit; /*tirar azul de link*/
+}
+
+.nome-completo {
+    font-size: 36px;
+    color: #999B84;
+    font-weight: 700; /*espessura*/
+    height: 45px;
+}
+
+.texto-sobre {
+    font-size: 20px;
+    line-height: 32px; /*Espaçamento entre as linhas*/
+}
+
+.profissao {
+    color: #727461;
+    height: 60px; /*altura*/
+}
